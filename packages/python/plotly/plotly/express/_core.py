@@ -1923,7 +1923,7 @@ def get_orderings(args, grouper, grouped):
                 orders[col] = list(OrderedDict.fromkeys(list(orders[col]) + uniques))
 
     sorted_group_names = []
-    for group_name in grouped.groups:
+    for group_name in grouped.indices:
         if len(grouper) == 1:
             group_name = (group_name,)
         sorted_group_names.append(group_name)
